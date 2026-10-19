@@ -22,7 +22,6 @@ import org.springframework.test.util.ReflectionTestUtils; // Private 필드나 S
 
 import java.util.Map; // 인메모리 인증 상태 맵 접근용 Java Map 인터페이스
 
-import static org.assertj.core.api.Assertions.assertThat; // 결과 검증(Assertion)을 위한 AssertJ 라이브러리
 import static org.assertj.core.api.Assertions.assertThatThrownBy; // 예외 발생 여부 검증용 AssertJ 라이브러리
 import static org.mockito.ArgumentMatchers.any; // Mockito에서 임의의 인자 전달을 표현할 때 사용
 import static org.mockito.BDDMockito.given; // BDD 스타일(Given-When-Then)로 가짜 객체의 동작을 정의

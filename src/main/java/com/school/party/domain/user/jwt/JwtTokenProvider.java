@@ -1,7 +1,9 @@
 package com.school.party.domain.user.jwt; // JWT 관련 컴포넌트가 위치한 패키지 경로 지정
 
 import com.school.party.domain.user.enums.Role; // 사용자 권한 구분 Enum 클래스 (STUDENT, ADMIN)
-import io.jsonwebtoken.*; // JJWT 라이브러리의 劾심 파서 및 토큰 빌더 클래스 모음
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
+import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys; // HMAC-SHA 암호화 서명 키 생성 유틸리티
 import jakarta.annotation.PostConstruct; // 객체 생성 및 의존성 주입 완료 후 초기화 실행 지점 어노테이션
 import org.springframework.beans.factory.annotation.Value; // application.properties 설정 파일의 환경변수 주입 어노테이션
