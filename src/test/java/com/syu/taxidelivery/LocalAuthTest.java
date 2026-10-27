@@ -1,14 +1,14 @@
 //자체 로그인 및 계정 잠금 단위 테스트
 package com.syu.taxidelivery;
 
-import com.school.party.domain.user.dto.LocalLoginRequest;
-import com.school.party.domain.user.entity.LocalCredential;
-import com.school.party.domain.user.entity.User;
-import com.school.party.domain.user.enums.Role;
-import com.school.party.domain.user.enums.UserStatus;
-import com.school.party.domain.user.repository.LocalCredentialRepository;
-import com.school.party.domain.user.repository.UserRepository;
-import com.school.party.domain.user.service.LocalAuthService;
+import com.syu.taxidelivery.domain.user.dto.LocalLoginRequest;
+import com.syu.taxidelivery.domain.user.entity.LocalCredential;
+import com.syu.taxidelivery.domain.user.entity.User;
+import com.syu.taxidelivery.domain.user.enums.Role;
+import com.syu.taxidelivery.domain.user.enums.UserStatus;
+import com.syu.taxidelivery.domain.user.repository.LocalCredentialRepository;
+import com.syu.taxidelivery.domain.user.repository.UserRepository;
+import com.syu.taxidelivery.domain.user.service.LocalAuthService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,6 +22,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
