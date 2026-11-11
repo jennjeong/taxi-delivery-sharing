@@ -133,6 +133,8 @@ page는 0 이상, size는 1~50입니다. status는 생략하거나 대문자 JOI
 
 details가 없으면 생략합니다. 오류 응답에는 data가 없습니다.
 
+응답 형식은 application/json입니다. 인증·CSRF 검사를 통과한 요청에서 이를 허용하지 않는 Accept는 컨트롤러 실행 전에 406으로 거절하며, 이때 참여·취소가 DB에 반영되지 않습니다. 오류도 JSON Content-Type을 명시합니다. [프론트 연동 계약](frontend-api-integration.md)과 [2026-11-11 검증 결과](revalidation/post-participation-2026-11-11.md)를 참고합니다.
+
 | HTTP | code |
 |---|---|
 | 400 | INVALID_POST_ID, INVALID_REQUEST, INVALID_QUERY_PARAMETER |
